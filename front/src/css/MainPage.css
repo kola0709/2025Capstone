@@ -1,0 +1,154 @@
+html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  html {
+    background: #F5FDE9 ;
+  }
+  .Mainpage_{
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center;
+    background: #F5FDE9;
+    gap: 24px;
+  }
+  .box {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px rgba(black, .2);
+    background: lighten(#f0f4c3, 10%);
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave {
+    opacity: .4;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background: #739467;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+  }
+  
+  .wave.-three {
+    animation: drift 5000ms infinite linear;
+  }
+  
+  .wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: .1;
+    background: #F2FBEF;
+  }
+  
+  .section {
+    width: 100%;
+  }
+
+  
+  .box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    line-height: 300px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .4em;
+    font-size: 24px;
+    text-shadow: 0 1px 0 rgba(black, .1);
+    text-indent: .3em;
+  }
+
+  .Mainpage_{
+   display: flex;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #11574A;
+    white-space: nowrap;
+    gap: 200px;  /* 간격 *
+  }
+  .Mainpage_ span {
+    display: inline-block;
+    margin-right: 70px;  /* 원하는 만큼 조절 */
+}
+
+  @keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
+
+  .mainbox {
+  background-color: #11574A; /* Evergreen */
+  padding: 20px 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee-content {
+  display: flex;
+  width: fit-content;
+  animation: marquee-right 60s linear infinite;
+}
+
+.marquee-content.reverse {
+  animation: marquee-left 60s linear infinite;
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.big-bold {
+  font-size: 130px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: white;
+  white-space: nowrap;
+}
+
+.medium {
+  font-size: 70px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: white;
+  white-space: nowrap;
+}
+
